@@ -14,12 +14,13 @@
   You should have received a copy of the GNU Lesser General Public
   License along with this library; if not, write to the Free Software
   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+  
+  Author: james_tsai@sonix.com.tw  2017/6/29
 */
 
 #pragma once
-
 #include "HardwareSerial.h"
-#include "SERCOM.h"
+//#include "SERCOM.h"
 #include "RingBuffer.h"
 
 #include <cstddef>
@@ -27,10 +28,9 @@
 class Uart : public HardwareSerial
 {
   public:
-    Uart(SERCOM *_s, uint8_t _pinRX, uint8_t _pinTX, SercomRXPad _padRX, SercomUartTXPad _padTX);
-    Uart(SERCOM *_s, uint8_t _pinRX, uint8_t _pinTX, SercomRXPad _padRX, SercomUartTXPad _padTX, uint8_t _pinRTS, uint8_t _pinCTS);
+    //Uart(SERCOM *_s, uint8_t _pinRX, uint8_t _pinTX, SercomRXPad _padRX, SercomUartTXPad _padTX);
     void begin(unsigned long baudRate);
-    void begin(unsigned long baudrate, uint16_t config);
+    void begin(unsigned long baudrate, unsigned long config);
     void end();
     int available();
     int availableForWrite();
@@ -43,23 +43,16 @@ class Uart : public HardwareSerial
     void IrqHandler();
 
     operator bool() { return true; }
-
   private:
-    SERCOM *sercom;
+    //SERCOM *sercom;
     RingBuffer rxBuffer;
-    RingBuffer txBuffer;
 
-    uint8_t uc_pinRX;
+    /*uint8_t uc_pinRX;
     uint8_t uc_pinTX;
     SercomRXPad uc_padRX;
     SercomUartTXPad uc_padTX;
-    uint8_t uc_pinRTS;
-    volatile uint32_t* pul_outsetRTS;
-    volatile uint32_t* pul_outclrRTS;
-    uint32_t ul_pinMaskRTS;
-    uint8_t uc_pinCTS;
 
     SercomNumberStopBit extractNbStopBit(uint16_t config);
     SercomUartCharSize extractCharSize(uint16_t config);
-    SercomParityMode extractParity(uint16_t config);
+    SercomParityMode extractParity(uint16_t config);*/
 };
