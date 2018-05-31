@@ -156,7 +156,7 @@ bss_clear_loop:
 
 	@BL _init                               @ before the application is started, initialize all hardware
 
-	@B main                                 @ and finally start the application
+	B main                                 @ and finally start the application
 
 unhandled:
 	B .                                    @ infinite loop for unsupported exceptions

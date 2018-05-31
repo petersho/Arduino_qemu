@@ -4,13 +4,13 @@
       "name": "qemu",
       "maintainer": "Peter Kung",
       "websiteURL": "http://github.com/petersho/Arduino_qemu",
-      "email": "test@aa.bb.cc",
+      "email": "peterkoug@gmail.com",
       "help": {
         "online": "http://github.com/petersho/Arduino_qemu"
       },
       "platforms": [
         {
-          "name": "Test Board (32 bits ARM926EJS)",
+          "name": "VersatilePB Board (32 bits ARM926EJS)",
           "architecture": "arm926ej-s",
           "version": "1.0.1",
           "category": "Contributed",
@@ -19,8 +19,8 @@
           },
           "url": "https://github.com/petersho/Arduino_qemu/raw/master/release/qemu926-1.0.1.tar.gz",
           "archiveFileName": "qemu926-1.0.1.tar.gz",
-          "checksum": "SHA-256:90fa9d2daf51e6fe78fdbde7ea21f19ac197f4e31eecf92cf0903a233db8452f",
-          "size": "20542",
+          "checksum": "SHA-256:85c7247a2d918379dc2cec31d4fe11a03ff33dbe5a57d875379299adfd6c5675",
+          "size": "20907",
           "boards": [
             {"name": "Qemu board ARM926"}
           ],
@@ -38,7 +38,7 @@
           ]
         },
         {
-          "name": "Test Board (32 bits ARM926EJS)",
+          "name": "VersatilePB Board (32 bits ARM926EJS)",
           "architecture": "arm926ej-s",
           "version": "1.0.0",
           "category": "Contributed",
