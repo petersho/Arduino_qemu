@@ -14,15 +14,16 @@
   You should have received a copy of the GNU Lesser General Public
   License along with this library; if not, write to the Free Software
   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+  
+  Author: james_tsai@sonix.com.tw  2017/6/29
 */
 
 #ifndef HardwareSerial_h
 #define HardwareSerial_h
 
 #include <inttypes.h>
-
 #include "Stream.h"
-
+/*
 #define HARDSER_PARITY_EVEN (0x1ul)
 #define HARDSER_PARITY_ODD	(0x2ul)
 #define HARDSER_PARITY_NONE (0x3ul)
@@ -63,12 +64,13 @@
 #define SERIAL_6O2	(HARDSER_STOP_BIT_2 | HARDSER_PARITY_ODD  | HARDSER_DATA_6)
 #define SERIAL_7O2	(HARDSER_STOP_BIT_2 | HARDSER_PARITY_ODD  | HARDSER_DATA_7)
 #define SERIAL_8O2	(HARDSER_STOP_BIT_2 | HARDSER_PARITY_ODD  | HARDSER_DATA_8)
+*/
 
 class HardwareSerial : public Stream
 {
   public:
     virtual void begin(unsigned long);
-    virtual void begin(unsigned long baudrate, uint16_t config);
+    virtual void begin(unsigned long baudrate, unsigned long config);
     virtual void end();
     virtual int available(void) = 0;
     virtual int peek(void) = 0;
@@ -79,6 +81,7 @@ class HardwareSerial : public Stream
     virtual operator bool() = 0;
 };
 
+/*
 extern void serialEventRun(void) __attribute__((weak));
-
+*/
 #endif

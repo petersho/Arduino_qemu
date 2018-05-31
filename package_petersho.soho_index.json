@@ -19,8 +19,8 @@
           },
           "url": "https://github.com/petersho/Arduino_qemu/raw/master/release/qemu926-1.0.1.tar.gz",
           "archiveFileName": "qemu926-1.0.1.tar.gz",
-          "checksum": "SHA-256:85c7247a2d918379dc2cec31d4fe11a03ff33dbe5a57d875379299adfd6c5675",
-          "size": "20907",
+          "checksum": "SHA-256:dad7071114f00cc2a24fdbab2b8cbd1eaad33f2b99cf2c3c583758b851a0ba8e",
+          "size": "23278",
           "boards": [
             {"name": "Qemu board ARM926"}
           ],
