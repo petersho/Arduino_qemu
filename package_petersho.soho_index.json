@@ -17,7 +17,7 @@
           "help": {
             "online": "http://github.com/petersho/Arduino_qemu"
           },
-          "url": "https://github.com/petersho/Arduino_qemu/release/raw/master/qemu926-1.0.1.tar.gz",
+          "url": "https://github.com/petersho/Arduino_qemu/raw/master/release/qemu926-1.0.1.tar.gz",
           "archiveFileName": "qemu926-1.0.1.tar.gz",
           "checksum": "SHA-256:74580792b2c27bff5c6cfdc7c53ec7b318c98d34ccc9a0db029b302a8f421098",
           "size": "1332",
@@ -45,7 +45,7 @@
           "help": {
             "online": "http://github.com/petersho/Arduino_qemu"
           },
-          "url": "https://github.com/petersho/Arduino_qemu/release/raw/master/qemu926-1.0.0.tar.gz",
+          "url": "https://github.com/petersho/Arduino_qemu/raw/master/release/qemu926-1.0.0.tar.gz",
           "archiveFileName": "qemu926-1.0.0.tar.gz",
           "checksum": "SHA-256:313681c6c443dbb106d67befc5d647814f3cc3d9ef069e4b6fe2e372b50f5ca8",
           "size": "1338",
