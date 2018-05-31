@@ -17,10 +17,10 @@
           "help": {
             "online": "http://github.com/petersho/Arduino_qemu"
           },
-          "url": "https://github.com/petersho/IOT/raw/master/snx-1.0.0.tar.gz",
-          "archiveFileName": "snx-1.0.0.tar.gz",
-          "checksum": "SHA-256:ec3ff8a1dc96d3ba6f432b9b837a35fd4174a34b3d2927de1d51010e8b94f9f1",
-          "size": "15005",
+          "url": "https://github.com/petersho/Arduino_qemu/release/raw/master/qemu926-1.0.1.tar.gz",
+          "archiveFileName": "qemu926-1.0.1.tar.gz",
+          "checksum": "SHA-256:74580792b2c27bff5c6cfdc7c53ec7b318c98d34ccc9a0db029b302a8f421098",
+          "size": "1332",
           "boards": [
             {"name": "Qemu board ARM926"}
           ],
@@ -45,8 +45,8 @@
           "help": {
             "online": "http://github.com/petersho/Arduino_qemu"
           },
-          "url": "https://github.com/petersho/IOT/raw/master/snx-1.0.1.tar.gz",
-          "archiveFileName": "snx-1.0.1.tar.gz",
+          "url": "https://github.com/petersho/Arduino_qemu/release/raw/master/qemu926-1.0.0.tar.gz",
+          "archiveFileName": "qemu926-1.0.0.tar.gz",
           "checksum": "SHA-256:313681c6c443dbb106d67befc5d647814f3cc3d9ef069e4b6fe2e372b50f5ca8",
           "size": "1338",
           "boards": [
