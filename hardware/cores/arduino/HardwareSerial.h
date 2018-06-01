@@ -69,18 +69,26 @@
 class HardwareSerial : public Stream
 {
   public:
+    //HardwareSerial();
     virtual void begin(unsigned long);
-    virtual void begin(unsigned long baudrate, unsigned long config);
+    //virtual void begin(unsigned long, uint8_t);
     virtual void end();
-    virtual int available(void) = 0;
-    virtual int peek(void) = 0;
-    virtual int read(void) = 0;
-    virtual void flush(void) = 0;
-    virtual size_t write(uint8_t) = 0;
+    virtual int available(void);
+    virtual int peek(void);
+    virtual int read(void);
+    virtual void flush(void);
+    virtual size_t write(uint8_t);
+    inline size_t write(unsigned long n) { return write((uint8_t)n); }
+    inline size_t write(long n) { return write((uint8_t)n); }
+    inline size_t write(unsigned int n) { return write((uint8_t)n); }
+    inline size_t write(int n) { return write((uint8_t)n); }
     using Print::write; // pull in write(str) and write(buf, size) from Print
-    virtual operator bool() = 0;
+    operator bool();
+
+
 };
 
+extern HardwareSerial Serial;
 /*
 extern void serialEventRun(void) __attribute__((weak));
 */
